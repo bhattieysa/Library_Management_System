@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".NotificationSendingActivity"
+            android:background="@drawable/lbsbackground">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bookn_notifications_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Book Name"
+                app:boxStrokeColor="#DAA520"
+                android:textColorHint="@color/text"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/_100sdp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/text"
+                    android:id="@+id/bookname_notifications_activity"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/booksub_notifications_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject"
+                app:boxStrokeColor="#DAA520"
+                android:textColorHint="@color/text"
+                app:layout_constraintTop_toBottomOf="@id/bookn_notifications_activity"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/text"
+                    android:id="@+id/booksubject_notifications_activity"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/send_notification_btn"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_100sdp"
+                app:layout_constraintTop_toBottomOf="@id/booksub_notifications_activity"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/mybutton"
+                android:textColor="@color/white"
+                android:onClick="onClick"
+                android:textAlignment="center"
+                android:layout_marginStart="@dimen/_55sdp"
+                android:gravity="center_vertical"
+                android:text="Send Notification"
+                tools:ignore="RtlCompat" />
+
+            <ProgressBar
+                android:id="@+id/progress_notifications_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/send_notification_btn"
+                android:visibility="invisible"
+                android:layout_margin="@dimen/_10sdp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".UserActivities"
+    android:background="@drawable/lbsbackground"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Wellcome To Library"
+        android:textColor="@color/text"
+        android:textSize="@dimen/_25ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="What would you like to do"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="@dimen/_20ssp"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/searchbooks"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:textAlignment="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lendbooks"
+        android:background="@drawable/mybutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Search Books"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/lendbooks"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/reservebooks"
+        android:background="@drawable/mybutton"
+        android:text="Lend Books"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/reservebooks"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/mybutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Reeserve Books"
+        tools:ignore="RtlCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

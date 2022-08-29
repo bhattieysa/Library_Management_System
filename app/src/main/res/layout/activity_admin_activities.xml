@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AdminActivities"
+    android:background="@drawable/lbsbackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Wellcome Admin"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:fontFamily="serif-monospace"
+        android:textSize="@dimen/_25sdp"
+        android:textColor="@color/text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="What would you like to do"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/text"/>
+
+    <TextView
+        android:id="@+id/regnewbook"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_55sdp"
+        android:background="@drawable/mybutton"
+        android:gravity="center_vertical"
+        android:text="Register New Books"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/issuereturns"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/issuereturns"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_55sdp"
+        android:background="@drawable/mybutton"
+        android:gravity="center_vertical"
+        android:text="Issue and Return Books"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/addevents"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/addevents"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/mybutton"
+        android:layout_marginStart="@dimen/_55sdp"
+        android:text="Events"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/send_notification"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/regnewbook"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/mybutton"
+        android:layout_marginStart="@dimen/_55sdp"
+        android:text="Send Notification"
+        android:onClick="onClick"
+        tools:ignore="RtlCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
